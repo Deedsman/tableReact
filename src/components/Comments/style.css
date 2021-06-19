@@ -1,0 +1,130 @@
+.comments{
+    max-width: 700px;
+    margin: 0 auto;
+    height:auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    position: absolute;
+    padding: 15px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    z-index: -1;
+    display: none;
+}
+.comments>.comment__container{
+    padding-left: 15px;
+    padding-right:15px ;
+}
+.comments.active{
+    display: block;
+    opacity: 1;
+    z-index: 1;
+    /* //height: 100%; */
+    transition: opacity 0.3s ease-in;
+}
+
+.comments__name{
+   padding-top: 16px;
+   flex: 1;
+   text-align: left;
+   position: relative;
+   font-weight: 600;
+   
+   
+}
+.comment__item{
+    display: flex;
+    flex-direction: column;
+   
+}
+.comments__more{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    cursor: pointer;
+}
+.comments__more.active{
+    transform: rotate(180deg);
+}
+.comment__text{
+    display: flex;
+    
+}
+.comments__description{
+   flex: 2;
+   overflow: hidden;
+   position: relative;
+   padding-right: 33px;
+   margin-bottom: 25px;
+   padding-bottom: 56px;
+   text-align: left;
+   height: 0;
+   transition: height 0.3s ease-in-out;
+   /* //height: 60px; */
+}
+.comment__container{
+    /* position: relative; */
+}
+.comments>.comment__container>.comment__item>.comments__name{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(116, 116, 116);
+    padding-top: 0px;
+}
+
+.comment__title{
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+.comments__block{
+    /* border-bottom: 1px solid gray; */
+    position: relative;
+    padding-left: 45px;
+}
+.comments>.comment__container>.comment__item>.comments__block{
+  padding-left: 0px;
+}
+.comments__close{
+position: absolute;
+right: 15px;
+top: 15px;
+z-index: 1;
+cursor: pointer;
+}
+.comments__close:hover{
+    transform: rotate(90deg);
+    transition:transform 0.3s ease;
+    
+}
+.comments__description.active{
+    height: 100%;
+}
+.comments__level.close__level{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+.comments__level.active{
+    height: 100%;
+}
+.close-block_btn{
+  cursor: pointer;
+  /* //border-bottom: 1px solid gray; */
+  color: #065fd4;
+  font-weight: 600;
+}
+.comments__time{
+   position: absolute;
+   left: 28px;
+   top: 42px;
+   font-weight: 700;
+   color: gray;
+   font-size: 0.68em;
+}
+ .row0 .MuiTableCell-root{
+    text-align: center !important;
+}

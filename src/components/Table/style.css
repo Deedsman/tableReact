@@ -1,0 +1,29 @@
+.tr-row{
+  cursor: pointer;
+}
+.table__container{
+  max-width: 700px;
+  margin: 0 auto;
+}
+.mobile__button{
+ display: none !important;
+}
+
+@media screen and (max-width:414px){
+  .mobile__button{
+    display: block !important;
+    position: fixed !important;
+    right: 5px;
+    bottom: 5vh;
+    z-index: 100;
+    border-radius: 50px !important;
+    height: 68px;
+  }
+  .arrows{
+    display: none;
+  }
+  .cell{
+   pointer-events: none;
+  }
+ 
+}
